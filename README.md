@@ -1,4 +1,4 @@
-# Artista
+# Artista da strada
 
 Per la realizzazione dell'esercizio sono stati utilizzati due semafori entrambi imposta a 1: 
 - **mutexSedie** : per la gestione del buffer
