@@ -12,7 +12,7 @@ La classe Persona eredita da Thread e rappresenta il singolo cliente.
 Attraverso il *metodo run* gestisce l'attesa dei clienti e l'ottenimento del ritratto. Il cliente controlla che sia libera una sedia e si siede, in caso contrario aspetta un tempo random compreso tra **min** e **max** impostati inizialmente come 5000 e 10000 millisecondi. Al termine dell'attesa ricontrolla che una sedia sia libera, se la trova si siede altrimenti si allontana.
 Se trova un posto libero prende il **mutexSedie** per prenotare univocamente il posto mettendo il suo id nel buffer. Liberato il mutex e prenota il **mutexArtista**.
 
-''' java
+```java
 public void run() {
 		if(Data.buffer[(Data.Out+1) % Data.N] != -1) {			
 			try {
@@ -36,9 +36,8 @@ public void run() {
 			}
 			System.out.println("Addio " + id);
 		}
-		
 	}
-'''
+```
  ---
  
 ## Classe Artista
